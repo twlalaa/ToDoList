@@ -34,13 +34,14 @@ addBtn.addEventListener("click", (e) => {
 const updateList = () => {
   ulEl.innerHTML = "";
   liList = [];
-  tasks.forEach((task) => {
+  tasks.forEach((task, index) => {
     const li = document.createElement("li");
+
     task.ticked ? li.classList.add("line") : li.classList.remove("line");
     task.ticked ? li.classList.add("border") : li.classList.remove("border");
 
     li.innerHTML = `          
-    <p class="li-content">${task.text}</p>
+    <p class="li-content">${index+1}. ${task.text}</p>
     <div class="btns">
       <button class="done" id="doneBtn"><i class="fa-solid fa-check"></i></button>
       <button class="deleteBtn"><i class="fa-solid fa-xmark"></i></button>
@@ -53,13 +54,6 @@ const updateList = () => {
   const doneBtns = document.querySelectorAll(".done");
   doneBtns.forEach((btnDone, index) => {
     btnDone.addEventListener("click", () => {
-      if (liList[index].classList.contains("line")) {
-        liList[index].classList.remove("line");
-        liList[index].classList.remove("border");
-      } else {
-        liList[index].classList.add("line");
-        liList[index].classList.add("border");
-      }
       tasks[index].ticked = !tasks[index].ticked;
       localStorage.setItem("tasks", JSON.stringify(tasks));
       updateList();
