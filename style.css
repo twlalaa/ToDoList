@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Edu SA Beginner", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+.container {
+  height: 580px;
+  width: 350px;
+  background-color: #b5c99a;
+  color: #862b0d;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+}
+
+.container-top {
+  padding: 10px;
+  width: 100%;
+  background-color: #862b0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  height: 50px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid white;
+}
+
+#input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: #862b0d;
+}
+
+#input:focus {
+  outline: none;
+  color: #fff;
+}
+
+#input::placeholder {
+  font-size: 14px;
+  color: #fff;
+  opacity: 50%;
+}
+
+.add-btn {
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+ul li {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 7px;
+  border-bottom: 3px solid #ffc95f;
+  height: 50px;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.btns button {
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btns button:not(:last-child) {
+  margin-right: 10px;
+}
+
+#doneBtn {
+  color: rgb(14, 93, 14);
+}
+
+.deleteBtn {
+  color: rgb(148, 33, 33);
+}
+
+.line p {
+  text-decoration: line-through;
+  color: green;
+}
+
+.border {
+  border-bottom: 3px solid green;
+}

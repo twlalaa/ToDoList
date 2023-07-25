@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoListLala</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form class="container-top">
+          <input id="input" type="text" placeholder="Enter your task here..." />
+          <button class="add-btn" id="add-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <ul id="ul">
+          <li >
+            <p class="li-content">Task 1</p>
+            <div class="btns">
+              <button id="doneBtn"><i class="fa-solid fa-check"></i></button>
+              <button id="deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
